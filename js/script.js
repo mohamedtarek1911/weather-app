@@ -48,7 +48,7 @@ form.addEventListener("sumbit", function (e) {
 async function searchCity(term) {
   let searchCities = [];
   let result = await fetch(
-    `http://api.weatherapi.com/v1/search.json?key=6f9e7a024cb64777875203600220910&q=${term}`
+    `https://api.weatherapi.com/v1/search.json?key=6f9e7a024cb64777875203600220910&q=${term}`
   );
   let finalResult = await result.json();
   searchCities.push(finalResult);
